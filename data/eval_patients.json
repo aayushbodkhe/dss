@@ -1,0 +1,121 @@
+[
+  {
+    "id": "EP001",
+    "scenario": "Hypertensive diabetic with CKD \u2014 ACEi prescribed despite bilateral RAS",
+    "challenge_tags": [
+      "CRITIQUE",
+      "CONTRAINDICATION"
+    ],
+    "visits": 2,
+    "proposed_treatment": "ACEi (ramipril)",
+    "critique_expected_catch": "Bilateral renal artery stenosis documented in imaging at V1 \u2014 ACEi CONTRAINDICATED",
+    "hitl_triggered": false,
+    "baseline_agent_correct": false,
+    "with_critique_correct": true,
+    "confidence_at_diagnosis": 0.82
+  },
+  {
+    "id": "EP002",
+    "scenario": "Depression in patient on MAOI \u2014 SSRI proposed",
+    "challenge_tags": [
+      "CRITIQUE",
+      "MEMORY",
+      "CONTRAINDICATION"
+    ],
+    "visits": 1,
+    "proposed_treatment": "Escitalopram (SSRI)",
+    "critique_expected_catch": "Patient on phenelzine (MAOI from psychiatric history) \u2014 SSRI + MAOI = serotonin syndrome (potentially fatal)",
+    "hitl_triggered": true,
+    "baseline_agent_correct": false,
+    "with_critique_correct": true,
+    "confidence_at_diagnosis": 0.74
+  },
+  {
+    "id": "EP003",
+    "scenario": "PE suspected \u2014 DOAC prescribed in pregnant patient",
+    "challenge_tags": [
+      "CRITIQUE",
+      "CONTRAINDICATION",
+      "HITL"
+    ],
+    "visits": 1,
+    "proposed_treatment": "Rivaroxaban (DOAC)",
+    "critique_expected_catch": "Pregnancy documented at V1 \u2014 DOACs CONTRAINDICATED in pregnancy (GL005). Use LMWH.",
+    "hitl_triggered": true,
+    "baseline_agent_correct": false,
+    "with_critique_correct": true,
+    "confidence_at_diagnosis": 0.68
+  },
+  {
+    "id": "EP004",
+    "scenario": "CAP \u2014 fluoroquinolone in patient with epilepsy",
+    "challenge_tags": [
+      "SEMANTIC",
+      "CRITIQUE"
+    ],
+    "visits": 1,
+    "proposed_treatment": "Levofloxacin",
+    "critique_expected_catch": "Fluoroquinolones lower seizure threshold \u2014 caution/avoid in epilepsy. Use azithromycin + amoxicillin instead.",
+    "hitl_triggered": false,
+    "baseline_agent_correct": false,
+    "with_critique_correct": true,
+    "confidence_at_diagnosis": 0.88
+  },
+  {
+    "id": "EP005",
+    "scenario": "Sepsis \u2014 antibiotics delayed 4 hours waiting for culture results",
+    "challenge_tags": [
+      "TEMPORAL",
+      "CRITIQUE"
+    ],
+    "visits": 2,
+    "proposed_treatment": "Wait for culture before starting antibiotics",
+    "critique_expected_catch": "Sepsis bundle: antibiotics must be given within 1 hour of recognition (Sepsis-3 GL008). Waiting for culture is incorrect \u2014 draw blood cultures THEN give antibiotics.",
+    "hitl_triggered": true,
+    "baseline_agent_correct": false,
+    "with_critique_correct": true,
+    "confidence_at_diagnosis": 0.63
+  },
+  {
+    "id": "EP006",
+    "scenario": "HFrEF \u2014 beta-blocker withheld unnecessarily (misunderstood contraindication)",
+    "challenge_tags": [
+      "SEMANTIC",
+      "CRITIQUE"
+    ],
+    "visits": 2,
+    "proposed_treatment": "Withhold carvedilol due to mild COPD",
+    "critique_expected_catch": "Mild-moderate COPD is NOT a contraindication to cardioselective beta-blockers (bisoprolol) in HFrEF. Mortality benefit outweighs risk. Guideline-directed therapy should be initiated.",
+    "hitl_triggered": false,
+    "baseline_agent_correct": false,
+    "with_critique_correct": true,
+    "confidence_at_diagnosis": 0.91
+  },
+  {
+    "id": "EP007",
+    "scenario": "T2DM \u2014 metformin continued despite AKI (eGFR 22)",
+    "challenge_tags": [
+      "MEMORY",
+      "CRITIQUE"
+    ],
+    "visits": 3,
+    "proposed_treatment": "Continue metformin",
+    "critique_expected_catch": "eGFR dropped to 22 this visit (was 58 at baseline). ADA GL003: AVOID metformin if eGFR <30. Risk of lactic acidosis. Hold metformin immediately.",
+    "hitl_triggered": true,
+    "baseline_agent_correct": false,
+    "with_critique_correct": true,
+    "confidence_at_diagnosis": 0.77
+  },
+  {
+    "id": "EP008",
+    "scenario": "Correct guideline-based management \u2014 baseline agent gets it right",
+    "challenge_tags": [],
+    "visits": 1,
+    "proposed_treatment": "Amoxicillin for CAP in healthy patient",
+    "critique_expected_catch": "None \u2014 treatment is correct per IDSA guideline. Critique confirms correctness.",
+    "hitl_triggered": false,
+    "baseline_agent_correct": true,
+    "with_critique_correct": true,
+    "confidence_at_diagnosis": 0.93
+  }
+]

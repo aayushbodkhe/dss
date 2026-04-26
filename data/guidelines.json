@@ -1,0 +1,544 @@
+[
+  {
+    "id": "GL001",
+    "title": "AHA/ACC 2022 Heart Failure Guideline \u2014 SGLT2i in HFrEF",
+    "body": "Sodium-glucose cotransporter-2 inhibitors (SGLT2i) \u2014 dapagliflozin and empagliflozin \u2014 are recommended (Class I, LOE A) for patients with symptomatic chronic heart failure with reduced ejection fraction (HFrEF, LVEF \u226440%) to reduce the risk of HF hospitalization and cardiovascular death, irrespective of diabetes status. CONTRAINDICATION: eGFR < 20 mL/min/1.73m\u00b2. Caution: eGFR 20\u201345 \u2014 benefit present but lower. Do NOT initiate if patient is acutely decompensated.",
+    "category": "cardiology",
+    "keywords": [
+      "heart failure",
+      "HFrEF",
+      "SGLT2",
+      "dapagliflozin",
+      "empagliflozin",
+      "EF"
+    ],
+    "challenge_tags": [
+      "SEMANTIC",
+      "CONTRAINDICATION"
+    ]
+  },
+  {
+    "id": "GL002",
+    "title": "ACR 2021 \u2014 Methotrexate Contraindications in RA",
+    "body": "Methotrexate (MTX) is first-line DMARD for rheumatoid arthritis. ABSOLUTE CONTRAINDICATIONS: pregnancy (Category X), breastfeeding, severe renal impairment (CrCl < 30 mL/min), hepatic cirrhosis, active infection. RELATIVE CONTRAINDICATIONS: significant alcohol use (>1 drink/day), pulmonary disease (ILD risk), obesity (hepatotoxicity risk). Monitor: CBC, LFTs, creatinine every 4\u20138 weeks for first 6 months. Folate supplementation (1 mg/day) reduces mucosal and hematologic toxicity.",
+    "category": "rheumatology",
+    "keywords": [
+      "methotrexate",
+      "rheumatoid arthritis",
+      "RA",
+      "DMARD",
+      "kidney",
+      "pregnancy"
+    ],
+    "challenge_tags": [
+      "CRITIQUE",
+      "CONTRAINDICATION"
+    ]
+  },
+  {
+    "id": "GL003",
+    "title": "ADA 2024 \u2014 Type 2 Diabetes: Cardiorenal Protection Algorithm",
+    "body": "For T2DM patients with established atherosclerotic cardiovascular disease (ASCVD), CKD (eGFR 20\u201360 or albuminuria), or HF: add GLP-1 RA or SGLT2i regardless of HbA1c. GLP-1 RA preferred if ASCVD predominates (weight loss benefit). SGLT2i preferred if CKD or HF predominates (renal/cardiac protection). AVOID metformin if eGFR < 30. HOLD metformin if eGFR 30\u201345 (use caution). Insulin required if HbA1c > 10% or symptoms of hyperglycemia.",
+    "category": "endocrinology",
+    "keywords": [
+      "diabetes",
+      "T2DM",
+      "CKD",
+      "SGLT2",
+      "GLP-1",
+      "HbA1c",
+      "metformin"
+    ],
+    "challenge_tags": [
+      "SEMANTIC",
+      "MEMORY"
+    ]
+  },
+  {
+    "id": "GL004",
+    "title": "GOLD 2023 \u2014 COPD Exacerbation Management",
+    "body": "Acute COPD exacerbation: SABA + SAMA bronchodilators, systemic corticosteroids (prednisone 40 mg \u00d7 5 days), antibiotics if purulent sputum/fever/CRP >10. Oxygen target: SpO2 88\u201392% (avoid hyperoxygenation). CONTRAINDICATION: beta-blockers are RELATIVELY contraindicated in severe COPD (may worsen bronchospasm); cardioselective beta-1 selective agents preferred if needed for cardiac indication. Long-term: LABA+LAMA combination (dual bronchodilation) preferred over LABA alone. ICS indicated only if eosinophils >300/\u03bcL or \u22652 exacerbations/year.",
+    "category": "pulmonology",
+    "keywords": [
+      "COPD",
+      "exacerbation",
+      "bronchodilator",
+      "corticosteroid",
+      "beta-blocker",
+      "ICS"
+    ],
+    "challenge_tags": [
+      "CRITIQUE",
+      "CONTRAINDICATION"
+    ]
+  },
+  {
+    "id": "GL005",
+    "title": "ESC 2023 \u2014 Pulmonary Embolism: Diagnosis and Risk Stratification",
+    "body": "Suspected PE: calculate Wells score. Low probability (\u22644): D-dimer first; if elevated \u2192 CT pulmonary angiography (CTPA). High probability (>4): CTPA directly. Wells criteria include: clinical signs of DVT (+3), alternative less likely (+3), HR >100 (+1.5), immobilization/surgery (+1.5), prior DVT/PE (+1.5), hemoptysis (+1), malignancy (+1). MASSIVE PE: systemic thrombolysis if hemodynamically unstable. ANTICOAGULATION: DOACs (rivaroxaban, apixaban) preferred over LMWH/warfarin for most patients. AVOID DOACs in: severe renal failure (CrCl <15), pregnancy, antiphospholipid syndrome, mechanical heart valves.",
+    "category": "pulmonology",
+    "keywords": [
+      "PE",
+      "pulmonary embolism",
+      "DVT",
+      "Wells",
+      "D-dimer",
+      "CTPA",
+      "anticoagulation"
+    ],
+    "challenge_tags": [
+      "TEMPORAL",
+      "CRITIQUE"
+    ]
+  },
+  {
+    "id": "GL006",
+    "title": "KDIGO 2022 \u2014 Acute Kidney Injury (AKI) Management",
+    "body": "AKI defined as: creatinine rise \u22650.3 mg/dL in 48h, or \u22651.5x baseline in 7 days, or urine output <0.5 mL/kg/h for \u22656h. Stages: 1 (Cr 1.5\u20131.9x), 2 (Cr 2.0\u20132.9x), 3 (Cr \u22653.0x or dialysis). HOLD nephrotoxic agents: NSAIDs, contrast, aminoglycosides, ACEi/ARB (in volume depletion). IV fluid resuscitation with isotonic crystalloid. CRITICAL: nephrotoxic drugs MUST be stopped. Reassess all medications for renal dosing adjustments.",
+    "category": "nephrology",
+    "keywords": [
+      "AKI",
+      "acute kidney injury",
+      "creatinine",
+      "renal failure",
+      "nephrotoxic",
+      "NSAIDs"
+    ],
+    "challenge_tags": [
+      "MEMORY",
+      "CRITIQUE"
+    ]
+  },
+  {
+    "id": "GL007",
+    "title": "ACC/AHA 2022 \u2014 Hypertension: Treatment Thresholds and Goals",
+    "body": "Stage 1 HTN: SBP 130-139 or DBP 80-89. Lifestyle modification first if low risk; medication if high risk (CVD, DM, CKD). Stage 2 HTN: SBP \u2265140 or DBP \u226590. Two-drug combination preferred. Goal: <130/80 mmHg for most patients; <140/90 for older frail patients. First-line agents: ACEi/ARB (preferred in DM, CKD, HF), thiazide diuretic (preferred in Black patients), CCB. AVOID ACEi + ARB combination (dual RAS blockade \u2014 increase AKI risk). ACEi CONTRAINDICATED in bilateral renal artery stenosis, pregnancy.",
+    "category": "cardiology",
+    "keywords": [
+      "hypertension",
+      "HTN",
+      "blood pressure",
+      "ACEi",
+      "ARB",
+      "CCB",
+      "diuretic"
+    ],
+    "challenge_tags": [
+      "CONTRAINDICATION"
+    ]
+  },
+  {
+    "id": "GL008",
+    "title": "Sepsis-3 \u2014 Surviving Sepsis Campaign 2021",
+    "body": "Sepsis: life-threatening organ dysfunction caused by dysregulated host response to infection. qSOFA criteria (\u22652): RR \u226522, altered mentation, SBP \u2264100. 1-hour bundle: blood cultures (before antibiotics), broad-spectrum antibiotics, 30 mL/kg IV crystalloid if hypotension/lactate \u22654, vasopressors if MAP <65. Source control within 6\u201312h of diagnosis. Procalcitonin guides antibiotic de-escalation (target <0.5 ng/mL). CAUTION: beta-lactam allergy \u2014 use alternatives (aztreonam, cefazolin if mild allergy). Corticosteroids (hydrocortisone 200 mg/day) if vasopressor-refractory shock.",
+    "category": "critical_care",
+    "keywords": [
+      "sepsis",
+      "shock",
+      "infection",
+      "antibiotics",
+      "vasopressor",
+      "lactate",
+      "qSOFA"
+    ],
+    "challenge_tags": [
+      "CRITIQUE",
+      "TEMPORAL"
+    ]
+  },
+  {
+    "id": "GL009",
+    "title": "NICE 2023 \u2014 Depression: Diagnosis and Stepped Care Model",
+    "body": "Depression diagnosis: PHQ-9 \u226510, symptoms for \u22652 weeks including low mood and/or anhedonia. Mild-moderate (PHQ-9 10-19): CBT, problem-solving therapy, or SSRI. Severe (PHQ-9 \u226520): SSRI + psychological therapy; consider referral. SSRI first-line: sertraline, escitalopram. Fluoxetine if compliance concern (long half-life). Monitor: 2-week check for emergence of suicidal ideation (especially age <25). CONTRAINDICATIONS: MAOIs with SSRIs (serotonin syndrome). Tricyclics: avoid in recent MI, arrhythmia, severe heart disease (QT prolongation). Reassess after 4\u20136 weeks.",
+    "category": "psychiatry",
+    "keywords": [
+      "depression",
+      "PHQ-9",
+      "SSRI",
+      "antidepressant",
+      "CBT",
+      "mental health"
+    ],
+    "challenge_tags": [
+      "HITL",
+      "CRITIQUE"
+    ]
+  },
+  {
+    "id": "GL010",
+    "title": "ISDA 2022 \u2014 Community-Acquired Pneumonia (CAP) Management",
+    "body": "CAP severity: use PSI/PORT or CURB-65. CURB-65 \u22653: hospital admission; \u22655: ICU. Outpatient, no comorbidities: amoxicillin or doxycycline. Outpatient with comorbidities: respiratory fluoroquinolone OR amoxicillin-clavulanate + macrolide. Inpatient, non-ICU: beta-lactam + macrolide OR respiratory fluoroquinolone. ICU: beta-lactam + azithromycin OR antipseudomonal beta-lactam + fluoroquinolone (if Pseudomonas risk). PENICILLIN ALLERGY: respiratory fluoroquinolone is safe alternative. Duration: typically 5 days if clinical improvement.",
+    "category": "infectious_disease",
+    "keywords": [
+      "pneumonia",
+      "CAP",
+      "antibiotic",
+      "CURB-65",
+      "respiratory",
+      "fluoroquinolone"
+    ],
+    "challenge_tags": [
+      "SEMANTIC"
+    ]
+  },
+  {
+    "id": "GL011",
+    "title": "AHA/ASA 2021 - Acute Ischemic Stroke Initial Management",
+    "body": "Suspected acute ischemic stroke requires immediate non-contrast head CT to exclude hemorrhage. If within 4.5 hours and no contraindication, consider IV thrombolysis. Maintain blood pressure <185/110 before alteplase and <180/105 for 24 hours after. Do not delay reperfusion for non-essential tests. Mechanical thrombectomy is indicated for eligible large-vessel occlusion within guideline time windows.",
+    "category": "neurology",
+    "keywords": [
+      "stroke",
+      "alteplase",
+      "thrombolysis",
+      "thrombectomy",
+      "CT head",
+      "blood pressure"
+    ],
+    "challenge_tags": [
+      "TEMPORAL",
+      "CRITIQUE"
+    ]
+  },
+  {
+    "id": "GL012",
+    "title": "AHA/ASA 2022 - Secondary Stroke Prevention",
+    "body": "After ischemic stroke or TIA, initiate antiplatelet therapy unless cardioembolic source mandates anticoagulation. Control blood pressure to <130/80 in most patients and use high-intensity statin when appropriate. Screen for atrial fibrillation and optimize diabetes and smoking cessation interventions. Dual antiplatelet therapy is short-term only for select high-risk minor stroke/TIA pathways.",
+    "category": "neurology",
+    "keywords": [
+      "TIA",
+      "secondary prevention",
+      "antiplatelet",
+      "statin",
+      "atrial fibrillation",
+      "blood pressure"
+    ],
+    "challenge_tags": [
+      "SEMANTIC",
+      "MEMORY"
+    ]
+  },
+  {
+    "id": "GL013",
+    "title": "ACC/AHA 2023 - Atrial Fibrillation Rate and Rhythm Strategy",
+    "body": "In atrial fibrillation, choose rate or rhythm control based on symptoms, hemodynamic status, and comorbidities. For stroke prevention, assess CHA2DS2-VASc and bleeding risk jointly. DOACs are preferred over warfarin in non-valvular AF unless contraindicated. Avoid combining multiple AV nodal blockers without clear indication due to bradycardia and hypotension risk.",
+    "category": "cardiology",
+    "keywords": [
+      "atrial fibrillation",
+      "AF",
+      "DOAC",
+      "warfarin",
+      "rate control",
+      "rhythm control"
+    ],
+    "challenge_tags": [
+      "CRITIQUE",
+      "CONTRAINDICATION"
+    ]
+  },
+  {
+    "id": "GL014",
+    "title": "ESC 2023 - Acute Coronary Syndrome Early Care",
+    "body": "In suspected ACS, obtain ECG within 10 minutes and serial troponins as indicated. High-risk NSTEMI and STEMI pathways require rapid antithrombotic strategy and reperfusion planning. Avoid treatment delays in unstable patients. Balance ischemic benefit and bleeding risk when selecting dual antiplatelet and anticoagulant regimens.",
+    "category": "cardiology",
+    "keywords": [
+      "ACS",
+      "STEMI",
+      "NSTEMI",
+      "troponin",
+      "ECG",
+      "dual antiplatelet"
+    ],
+    "challenge_tags": [
+      "TEMPORAL",
+      "SEMANTIC"
+    ]
+  },
+  {
+    "id": "GL015",
+    "title": "KDIGO 2024 - Chronic Kidney Disease Evaluation and Risk",
+    "body": "Classify CKD using both eGFR category and albuminuria category for risk stratification. Confirm persistence over at least 3 months before diagnosing chronic disease. Optimize blood pressure, glycemic control, and renin-angiotensin system strategies where appropriate. Dose-adjust renally cleared medications and avoid nephrotoxins whenever possible.",
+    "category": "nephrology",
+    "keywords": [
+      "CKD",
+      "eGFR",
+      "albuminuria",
+      "renal dosing",
+      "nephrotoxic",
+      "blood pressure"
+    ],
+    "challenge_tags": [
+      "MEMORY",
+      "CRITIQUE"
+    ]
+  },
+  {
+    "id": "GL016",
+    "title": "KDIGO 2022 - Hyperkalemia in CKD and Heart Failure",
+    "body": "For hyperkalemia, urgently assess ECG changes and clinical severity. Stabilize myocardium when severe, shift potassium intracellularly, and remove excess potassium as needed. Review RAAS inhibitor use carefully rather than reflex discontinuation in all patients. Recheck potassium after acute interventions and address recurrent triggers including renal decline and interacting drugs.",
+    "category": "nephrology",
+    "keywords": [
+      "hyperkalemia",
+      "potassium",
+      "ECG",
+      "CKD",
+      "RAAS",
+      "heart failure"
+    ],
+    "challenge_tags": [
+      "CRITIQUE",
+      "TEMPORAL"
+    ]
+  },
+  {
+    "id": "GL017",
+    "title": "ADA 2024 - Insulin Initiation and Intensification",
+    "body": "Initiate insulin when severe hyperglycemia persists, catabolic symptoms are present, or oral/GLP-1 strategies are inadequate. Basal insulin titration should follow fasting glucose targets and hypoglycemia risk. Intensify to basal-bolus or alternative validated regimens when needed. Reassess adherence, injection technique, and social barriers before escalating complexity.",
+    "category": "endocrinology",
+    "keywords": [
+      "insulin",
+      "hyperglycemia",
+      "basal bolus",
+      "HbA1c",
+      "hypoglycemia",
+      "diabetes"
+    ],
+    "challenge_tags": [
+      "SEMANTIC",
+      "HITL"
+    ]
+  },
+  {
+    "id": "GL018",
+    "title": "ADA 2024 - Inpatient Glycemic Management",
+    "body": "Use scheduled insulin-based regimens for most hospitalized non-ICU patients; avoid sole sliding-scale strategies. Set individualized glucose targets balancing hypoglycemia and illness severity. In critically ill patients, continuous IV insulin may be required under protocolized monitoring. Transition plans at discharge should be explicit to reduce readmissions and medication errors.",
+    "category": "endocrinology",
+    "keywords": [
+      "inpatient diabetes",
+      "sliding scale",
+      "ICU",
+      "insulin infusion",
+      "discharge",
+      "hypoglycemia"
+    ],
+    "challenge_tags": [
+      "CRITIQUE",
+      "MEMORY"
+    ]
+  },
+  {
+    "id": "GL019",
+    "title": "GOLD 2024 - Stable COPD Longitudinal Pharmacotherapy",
+    "body": "Stable COPD management prioritizes symptom burden and exacerbation history. Initial long-acting bronchodilator strategy usually favors LABA/LAMA; inhaled corticosteroid addition is guided by eosinophil profile and exacerbation pattern. Overuse of ICS without indication increases pneumonia risk. Smoking cessation and pulmonary rehabilitation remain foundational non-pharmacologic interventions.",
+    "category": "pulmonology",
+    "keywords": [
+      "stable COPD",
+      "LABA",
+      "LAMA",
+      "ICS",
+      "eosinophils",
+      "exacerbation"
+    ],
+    "challenge_tags": [
+      "SEMANTIC",
+      "MEMORY"
+    ]
+  },
+  {
+    "id": "GL020",
+    "title": "ERS/ATS 2023 - Severe Asthma Treatment Escalation",
+    "body": "Confirm diagnosis and inhaler technique before labeling severe asthma. Escalate from ICS/LABA toward phenotype-directed biologic options for eosinophilic or allergic disease when uncontrolled. Repeated oral corticosteroid bursts indicate poor control and high adverse-effect burden. Avoid non-selective beta-blockers in unstable asthma unless compelling need and specialist oversight.",
+    "category": "pulmonology",
+    "keywords": [
+      "asthma",
+      "biologics",
+      "eosinophilic",
+      "ICS/LABA",
+      "oral steroids",
+      "beta-blocker"
+    ],
+    "challenge_tags": [
+      "CRITIQUE",
+      "CONTRAINDICATION"
+    ]
+  },
+  {
+    "id": "GL021",
+    "title": "IDSA 2023 - Urinary Tract Infection Stewardship",
+    "body": "Treat symptomatic UTI based on syndrome severity, local resistance patterns, renal function, and allergy history. Avoid treating asymptomatic bacteriuria except in specific indications such as pregnancy or selected urologic procedures. Narrow therapy once cultures return. Excess broad-spectrum use increases resistance and C. difficile risk.",
+    "category": "infectious_disease",
+    "keywords": [
+      "UTI",
+      "asymptomatic bacteriuria",
+      "antibiotic stewardship",
+      "culture",
+      "renal function",
+      "allergy"
+    ],
+    "challenge_tags": [
+      "CRITIQUE",
+      "SEMANTIC"
+    ]
+  },
+  {
+    "id": "GL022",
+    "title": "IDSA 2023 - Clostridioides difficile Management",
+    "body": "For suspected C. difficile infection, confirm compatible symptoms and appropriate testing strategy. Initial treatment selection depends on severity and recurrence history. Stop unnecessary inciting antibiotics where possible. Severe or fulminant disease requires urgent escalation, close monitoring, and multidisciplinary coordination.",
+    "category": "infectious_disease",
+    "keywords": [
+      "C. difficile",
+      "diarrhea",
+      "fulminant",
+      "antibiotic exposure",
+      "recurrence",
+      "infection control"
+    ],
+    "challenge_tags": [
+      "CRITIQUE",
+      "TEMPORAL"
+    ]
+  },
+  {
+    "id": "GL023",
+    "title": "NICE 2023 - Generalized Anxiety Disorder and Panic",
+    "body": "Use stepped care based on functional impairment and risk. Psychological therapies are central; SSRIs are first-line pharmacotherapy where medication is indicated. Avoid long-term benzodiazepines due to dependence and cognitive risk. Monitor early treatment period for activation, suicidality, and adherence barriers.",
+    "category": "psychiatry",
+    "keywords": [
+      "anxiety",
+      "panic",
+      "SSRI",
+      "benzodiazepine",
+      "CBT",
+      "stepped care"
+    ],
+    "challenge_tags": [
+      "HITL",
+      "CRITIQUE"
+    ]
+  },
+  {
+    "id": "GL024",
+    "title": "APA 2024 - Bipolar Disorder Acute Depression and Mania",
+    "body": "Differentiate bipolar depression from unipolar depression before initiating antidepressant monotherapy. In mania or mixed states, prioritize mood stabilizers or antipsychotic-based regimens per severity. Antidepressant monotherapy can precipitate switching in bipolar disorder. Suicide risk assessment and rapid safety planning are mandatory in high-risk presentations.",
+    "category": "psychiatry",
+    "keywords": [
+      "bipolar",
+      "mania",
+      "mood stabilizer",
+      "antidepressant",
+      "suicide risk",
+      "mixed features"
+    ],
+    "challenge_tags": [
+      "HITL",
+      "CONTRAINDICATION"
+    ]
+  },
+  {
+    "id": "GL025",
+    "title": "ASCO 2023 - Febrile Neutropenia Early Risk Pathway",
+    "body": "Febrile neutropenia is an oncologic emergency requiring immediate empiric broad-spectrum antibiotics after cultures and rapid assessment. Risk stratification guides inpatient versus carefully selected outpatient pathways. Delay in first-dose antibiotics increases adverse outcomes. Review recent chemotherapy and central line status during initial triage.",
+    "category": "oncology",
+    "keywords": [
+      "febrile neutropenia",
+      "chemotherapy",
+      "sepsis",
+      "empiric antibiotics",
+      "oncology emergency",
+      "central line"
+    ],
+    "challenge_tags": [
+      "TEMPORAL",
+      "CRITIQUE"
+    ]
+  },
+  {
+    "id": "GL026",
+    "title": "ASCO 2022 - Antiemetic Prophylaxis for Chemotherapy",
+    "body": "Antiemetic regimen intensity should match emetogenic risk category of chemotherapy protocol. Multi-drug prophylaxis is recommended for high-emetogenic regimens and adjusted for prior cycle breakthrough. Avoid under-prophylaxis, which worsens adherence and quality of life. Reassess interacting medications and QT risk when selecting antiemetics.",
+    "category": "oncology",
+    "keywords": [
+      "antiemetic",
+      "chemotherapy",
+      "emetogenic",
+      "nausea",
+      "vomiting",
+      "QT risk"
+    ],
+    "challenge_tags": [
+      "SEMANTIC",
+      "CRITIQUE"
+    ]
+  },
+  {
+    "id": "GL027",
+    "title": "NCCN 2024 - Cancer-Associated Venous Thromboembolism",
+    "body": "Cancer-associated VTE management requires balancing thrombosis recurrence and bleeding risk, accounting for tumor site, renal function, and drug interactions. LMWH or DOAC options depend on patient-specific factors and contraindications. Reassess anticoagulation strategy at disease and treatment transitions. Coordinate with oncology for invasive procedure planning.",
+    "category": "oncology",
+    "keywords": [
+      "cancer associated thrombosis",
+      "VTE",
+      "DOAC",
+      "LMWH",
+      "bleeding risk",
+      "renal function"
+    ],
+    "challenge_tags": [
+      "CRITIQUE",
+      "MEMORY"
+    ]
+  },
+  {
+    "id": "GL028",
+    "title": "ACOG 2023 - Hypertensive Disorders of Pregnancy",
+    "body": "Evaluate gestational hypertension and preeclampsia with blood pressure trends, end-organ markers, and fetal status. Severe features require urgent escalation and maternal stabilization. Magnesium sulfate is indicated for seizure prophylaxis in severe preeclampsia/eclampsia contexts. Avoid ACE inhibitors and ARBs during pregnancy due to fetal toxicity.",
+    "category": "obstetrics",
+    "keywords": [
+      "preeclampsia",
+      "gestational hypertension",
+      "pregnancy",
+      "magnesium sulfate",
+      "ACE inhibitor",
+      "ARB"
+    ],
+    "challenge_tags": [
+      "CONTRAINDICATION",
+      "HITL"
+    ]
+  },
+  {
+    "id": "GL029",
+    "title": "ACOG 2022 - Venous Thromboembolism in Pregnancy",
+    "body": "In pregnancy-associated VTE, LMWH is the preferred anticoagulant strategy in most cases. DOACs are generally avoided due to insufficient fetal safety data. Management must integrate gestational age, bleeding risk, and delivery planning. Postpartum anticoagulation duration depends on provoking factors and recurrence risk.",
+    "category": "obstetrics",
+    "keywords": [
+      "pregnancy VTE",
+      "LMWH",
+      "DOAC",
+      "postpartum",
+      "anticoagulation",
+      "bleeding risk"
+    ],
+    "challenge_tags": [
+      "CONTRAINDICATION",
+      "CRITIQUE"
+    ]
+  },
+  {
+    "id": "GL030",
+    "title": "AGS Beers Criteria 2023 - Potentially Inappropriate Medications in Older Adults",
+    "body": "In adults aged 65 and older, review medication regimens for potentially inappropriate medications that increase delirium, falls, bleeding, or anticholinergic burden. Use the lowest effective dose for the shortest feasible duration when alternatives are limited. Consider renal function and polypharmacy interactions during reconciliation. Deprescribing plans should include monitoring for withdrawal or symptom recurrence.",
+    "category": "geriatrics",
+    "keywords": [
+      "Beers criteria",
+      "older adults",
+      "polypharmacy",
+      "delirium",
+      "falls",
+      "deprescribing"
+    ],
+    "challenge_tags": [
+      "CRITIQUE",
+      "MEMORY"
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "visit_id": "V1",
+    "date": "2026-04-25",
+    "chief_complaint": "Shortness of breath, worsening over 3 days",
+    "symptoms": [
+      "dyspnea on exertion (worsening over 3 days)",
+      "mild bilateral ankle swelling",
+      "non-productive cough",
+      "no fever, no chest pain",
+      "orthopnea \\u2014 2 pillow"
+    ],
+    "vitals": {
+      "BP": "120/80",
+      "HR": "86"
+    },
+    "labs": {
+      "Creatinine": "1.1",
+      "eGFR": "65"
+    },
+    "primary_diagnosis": "Pending physician assessment",
+    "final_treatment": "Symptomatic management pending specialist review.",
+    "confidence": 0.5,
+    "confidence_calibrated": 0.5,
+    "critique_findings": [],
+    "trend_alerts": [],
+    "semantic_citations": [
+      "GL002",
+      "GL006",
+      "GL015"
+    ],
+    "doctor_note": ""
+  }
+]

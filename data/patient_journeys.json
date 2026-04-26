@@ -1,0 +1,430 @@
+[
+  {
+    "patient_id": "P_ARJUN",
+    "name": "Arjun Mehta",
+    "age": 67,
+    "sex": "Male",
+    "city": "Pune",
+    "blood_group": "B+",
+    "known_allergies": [
+      "penicillin"
+    ],
+    "challenge_tags": [
+      "MEMORY",
+      "CRITIQUE",
+      "SEMANTIC",
+      "HITL"
+    ],
+    "demo_patient": true,
+    "visits": [
+      {
+        "visit_id": "V1",
+        "date": "2024-11-05",
+        "visit_type": "ER",
+        "chief_complaint": "Shortness of breath, worsening over 3 days",
+        "symptoms": [
+          "dyspnea on exertion (worsening over 3 days)",
+          "mild bilateral ankle swelling",
+          "non-productive cough",
+          "no fever, no chest pain",
+          "orthopnea \u2014 2 pillow"
+        ],
+        "vitals": {
+          "BP": "148/92 mmHg",
+          "HR": "96 bpm",
+          "RR": "22 breaths/min",
+          "SpO2": "91% on room air",
+          "Temp": "37.1\u00b0C",
+          "Weight": "84 kg"
+        },
+        "labs": {
+          "WBC": "8.2 \u00d7 10\u2079/L",
+          "Hb": "11.8 g/dL",
+          "Creatinine": "1.8 mg/dL",
+          "eGFR": "38 mL/min",
+          "BNP": "Not ordered",
+          "CRP": "14 mg/L",
+          "ECG": "Sinus tachycardia, no acute changes",
+          "CXR": "Bilateral perihilar haziness, mild cardiomegaly"
+        },
+        "doctor_note": "Long-term smoker (40 pack-years). Presumed COPD exacerbation vs atypical pneumonia. Started salbutamol nebs + prednisolone.",
+        "injected_pattern": {
+          "tag": "MEMORY",
+          "description": "BNP not ordered. CXR shows cardiomegaly. Without episodic memory across visits, an agent seeing only Visit 1 misses the HF picture. The ankle swelling + orthopnea clue is easily dismissed as 'COPD'.",
+          "stateless_agent_error": "Diagnoses COPD exacerbation, misses early HF signs, does not order BNP"
+        }
+      },
+      {
+        "visit_id": "V2",
+        "date": "2024-11-19",
+        "visit_type": "OPD Follow-up",
+        "chief_complaint": "Persistent breathlessness, not improving on inhalers",
+        "symptoms": [
+          "breathlessness worse despite salbutamol inhaler",
+          "bilateral ankle oedema (pitting +++)",
+          "paroxysmal nocturnal dyspnoea (PND)",
+          "3-pillow orthopnoea (worsened)",
+          "fatigue, reduced exercise tolerance",
+          "no wheeze on auscultation",
+          "bilateral crepitations basal"
+        ],
+        "vitals": {
+          "BP": "152/96 mmHg",
+          "HR": "102 bpm",
+          "RR": "24 breaths/min",
+          "SpO2": "90% on room air",
+          "Temp": "36.8\u00b0C",
+          "Weight": "88 kg",
+          "JVP": "Elevated at 6 cm above sternal angle"
+        },
+        "labs": {
+          "BNP": "1840 pg/mL",
+          "Creatinine": "2.1 mg/dL",
+          "eGFR": "32 mL/min",
+          "Echo": "LVEF 32%, dilated LV, moderate MR",
+          "Troponin": "0.04 ng/mL (mildly elevated)",
+          "CRP": "8 mg/L",
+          "HbA1c": "7.9% (diabetes poorly controlled)"
+        },
+        "doctor_note": "Echo confirms HFrEF. BNP markedly elevated. CKD worsening (creatinine up from 1.8 to 2.1). Started furosemide 40mg OD.",
+        "injected_pattern": {
+          "tag": "HITL + CRITIQUE",
+          "description": "Agent confidence for differential: HFrEF 0.71, ACS 0.18, COPD 0.11. Confidence < 0.80 \u2192 HITL MANDATORY. Critique node should flag: (1) creatinine worsening from V1 to V2 \u2014 AKI developing? (2) HbA1c 7.9% \u2014 diabetes also poorly controlled. (3) SGLT2i recommended for HFrEF+T2DM but eGFR is 32 \u2014 check guideline threshold.",
+          "stateless_agent_error": "Without V1 memory: misses creatinine trajectory (1.8\u21922.1 = AKI developing), misses that COPD was working diagnosis in V1 (inhalers were already tried and failed)"
+        }
+      },
+      {
+        "visit_id": "V3",
+        "date": "2024-12-03",
+        "visit_type": "Rheumatology Referral",
+        "chief_complaint": "Joint pain, bilateral hands and knees, morning stiffness > 1 hour",
+        "symptoms": [
+          "symmetrical joint involvement \u2014 MCPs, PIPs, wrists",
+          "morning stiffness > 90 minutes",
+          "bilateral knee effusions",
+          "fatigue (attributed to RA + HF)",
+          "no skin rash, no uveitis"
+        ],
+        "vitals": {
+          "BP": "138/88 mmHg",
+          "HR": "88 bpm",
+          "RR": "18 breaths/min",
+          "SpO2": "93% on 2L O2",
+          "Weight": "85 kg"
+        },
+        "labs": {
+          "RF": "Positive (128 IU/mL)",
+          "Anti-CCP": "Strongly positive (>250 U/mL)",
+          "CRP": "42 mg/L",
+          "ESR": "88 mm/hr",
+          "Creatinine": "2.3 mg/dL",
+          "eGFR": "28 mL/min",
+          "CXR": "Bilateral ILD changes (early)",
+          "X-ray hands": "Periarticular osteopenia, no erosions yet"
+        },
+        "doctor_note": "Rheumatoid arthritis diagnosed. DAS28 score 5.8 (high activity). Considering methotrexate as first-line DMARD.",
+        "injected_pattern": {
+          "tag": "CRITIQUE + MEMORY",
+          "description": "THE KEY TRAP: Doctor considers methotrexate. CRITIQUE NODE must catch: eGFR 28 mL/min \u2192 CrCl ~26 mL/min \u2192 Methotrexate ABSOLUTELY CONTRAINDICATED (GL002: absolute contraindication CrCl < 30). Also: early ILD on CXR (relative contraindication). A stateless agent seeing only V3 might not have the creatinine trend. With episodic memory, it knows creatinine has been rising since V1 (1.8 \u2192 2.1 \u2192 2.3).",
+          "critique_should_catch": [
+            "Methotrexate CONTRAINDICATED: CrCl ~26 mL/min (absolute threshold <30)",
+            "Early ILD on CXR: relative contraindication to methotrexate",
+            "Creatinine trend WORSENING across visits (1.8 \u2192 2.1 \u2192 2.3): possible AKI progression",
+            "HFrEF + RA: hydroxychloroquine is renal-safe alternative DMARD",
+            "SGLT2i for HFrEF + T2DM: eGFR 28 now at lower limit \u2014 monitor closely"
+          ],
+          "stateless_agent_error": "Without memory: may not flag CrCl, may recommend methotrexate standard dose, misses ILD pattern from multiple visits"
+        }
+      }
+    ],
+    "ground_truth_differential": {
+      "V1": [
+        {
+          "diagnosis": "COPD exacerbation",
+          "probability": 0.45
+        },
+        {
+          "diagnosis": "Acute HF decompensation (occult)",
+          "probability": 0.35
+        },
+        {
+          "diagnosis": "Community-acquired pneumonia",
+          "probability": 0.2
+        }
+      ],
+      "V2": [
+        {
+          "diagnosis": "HFrEF (confirmed)",
+          "probability": 0.71
+        },
+        {
+          "diagnosis": "Acute-on-chronic kidney disease (AKI stage 1)",
+          "probability": 0.58
+        },
+        {
+          "diagnosis": "T2DM poorly controlled",
+          "probability": 0.82
+        },
+        {
+          "diagnosis": "ACS (rule out)",
+          "probability": 0.18
+        }
+      ],
+      "V3": [
+        {
+          "diagnosis": "Rheumatoid Arthritis (new diagnosis)",
+          "probability": 0.91
+        },
+        {
+          "diagnosis": "HFrEF (known)",
+          "probability": 0.95
+        },
+        {
+          "diagnosis": "CKD stage 3b\u20134 (progressive)",
+          "probability": 0.88
+        },
+        {
+          "diagnosis": "Drug-induced ILD (early)",
+          "probability": 0.22
+        }
+      ]
+    },
+    "critique_injections": [
+      {
+        "visit": "V3",
+        "type": "CONTRAINDICATION",
+        "severity": "CRITICAL",
+        "message": "PROPOSED TREATMENT: Methotrexate for RA. CONTRAINDICATION DETECTED: CrCl ~26 mL/min (from creatinine 2.3 + age 67). Absolute contraindication: CrCl < 30 mL/min per ACR 2021 guideline (GL002). ILD on CXR adds relative contraindication. RECOMMENDATION: Use hydroxychloroquine \u00b1 sulfasalazine as renal-safe DMARD. Urgent nephrology input required."
+      },
+      {
+        "visit": "V2",
+        "type": "MISSED_FINDING",
+        "severity": "HIGH",
+        "message": "Creatinine trend: V1=1.8 \u2192 V2=2.1 mg/dL in 14 days. Rise of 0.3 mg/dL meets AKI Stage 1 criteria (KDIGO GL006). NSAIDs or contrast exposure should be ruled out. Furosemide initiation in AKI requires monitoring. Recommend nephrology referral."
+      },
+      {
+        "visit": "V2",
+        "type": "GUIDELINE_ALERT",
+        "severity": "MEDIUM",
+        "message": "HFrEF + T2DM: SGLT2i (dapagliflozin/empagliflozin) has Class I recommendation (AHA GL001). eGFR 32 mL/min \u2014 benefit present but lower; initiation is still recommended. Monitor eGFR after initiation."
+      }
+    ]
+  },
+  {
+    "patient_id": "P_PRIYA",
+    "name": "Priya Nair",
+    "age": 54,
+    "sex": "Female",
+    "city": "Mumbai",
+    "blood_group": "O+",
+    "known_allergies": [
+      "sulfonamides"
+    ],
+    "challenge_tags": [
+      "TEMPORAL",
+      "HITL",
+      "CRITIQUE",
+      "SEMANTIC"
+    ],
+    "demo_patient": true,
+    "visits": [
+      {
+        "visit_id": "V1",
+        "date": "2025-01-08",
+        "visit_type": "GP",
+        "chief_complaint": "Fever, dysuria, mild confusion",
+        "symptoms": [
+          "fever 38.2\u00b0C for 2 days",
+          "dysuria and frequency",
+          "mild confusion ('not herself' per family)",
+          "no chest pain, no cough",
+          "no nausea/vomiting",
+          "background: T2DM on metformin, HTN on atenolol"
+        ],
+        "vitals": {
+          "BP": "128/78 mmHg",
+          "HR": "92 bpm",
+          "RR": "18 breaths/min",
+          "SpO2": "97% on room air",
+          "Temp": "38.2\u00b0C",
+          "qSOFA_score": "1 (altered mentation only)"
+        },
+        "labs": {
+          "WBC": "13.4 \u00d7 10\u2079/L",
+          "Urine dipstick": "Nitrites +, Leucocytes +++",
+          "Creatinine": "1.1 mg/dL",
+          "CRP": "28 mg/L",
+          "Blood culture": "Sent \u2014 pending",
+          "Lactate": "Not ordered",
+          "Procalcitonin": "Not ordered"
+        },
+        "doctor_note": "Likely uncomplicated UTI. Started trimethoprim-sulfamethoxazole (TMP-SMX). Wait \u2014 patient has SULFONAMIDE ALLERGY! Switched to nitrofurantoin. Sent home.",
+        "injected_pattern": {
+          "tag": "CRITIQUE + MEMORY",
+          "description": "Initial prescriber nearly gave TMP-SMX to a sulfonamide-allergic patient. Agent must cross-reference allergy from patient record. Confusion attributed to UTI \u2014 qSOFA=1, not meeting sepsis threshold yet. However, lactate not ordered \u2014 missed early marker.",
+          "critique_should_catch": [
+            "ALLERGY ALERT: TMP-SMX contains sulfonamide \u2014 patient has documented sulfonamide allergy",
+            "qSOFA = 1: borderline, warrants 24h follow-up instruction",
+            "Lactate not ordered: consider in diabetic elderly with confusion"
+          ],
+          "stateless_agent_error": "Without allergy record in memory: may not catch TMP-SMX sulfonamide allergy. Without V1 as baseline: misses trajectory to sepsis in V2."
+        }
+      },
+      {
+        "visit_id": "V2",
+        "date": "2025-01-10",
+        "visit_type": "ER",
+        "chief_complaint": "Worsening confusion, hypotension, not passing urine",
+        "symptoms": [
+          "severe confusion (GCS 13 \u2014 E4V3M6)",
+          "rigors and shaking chills",
+          "oliguria (<20 mL/hr last 6 hours)",
+          "no improvement on nitrofurantoin",
+          "abdomen tender in suprapubic and bilateral flanks"
+        ],
+        "vitals": {
+          "BP": "88/54 mmHg",
+          "HR": "118 bpm",
+          "RR": "26 breaths/min",
+          "SpO2": "94% on 4L O2",
+          "Temp": "39.4\u00b0C",
+          "qSOFA_score": "3 (all three criteria met)",
+          "MAP": "65 mmHg"
+        },
+        "labs": {
+          "WBC": "21.6 \u00d7 10\u2079/L (left shift)",
+          "Lactate": "4.2 mmol/L",
+          "Creatinine": "2.8 mg/dL",
+          "eGFR": "18 mL/min",
+          "Procalcitonin": "18.4 ng/mL",
+          "Blood culture": "Gram-negative rods (pending speciation)",
+          "Urine culture": "E. coli >10\u2075 CFU (ampicillin resistant)",
+          "CXR": "No consolidation",
+          "CT abdomen": "Bilateral pyelonephritis, no abscess",
+          "ECG": "Sinus tachycardia, QTc 458 ms"
+        },
+        "doctor_note": "Urosepsis / septic shock. ICU transfer. Started meropenem. HTN medications held. Note: atenolol was continued by ICU trainee \u2014 review needed.",
+        "injected_pattern": {
+          "tag": "TEMPORAL + CRITIQUE",
+          "description": "TEMPORAL: qSOFA progressed 1\u21923 in 48h. Lactate 4.2 \u2192 massive PE or septic shock. AKI: creatinine 1.1\u21922.8 in 48h (AKI stage 2\u20133). CRITIQUE TRAP: ICU trainee continued atenolol (beta-blocker) in septic shock \u2014 this is wrong (beta-blockers worsen vasodilation in distributive shock). Also: nitrofurantoin is CONTRAINDICATED in eGFR <45 \u2014 should have been flagged on discharge from V1.",
+          "critique_should_catch": [
+            "TEMPORAL AKI: creatinine 1.1 (V1) \u2192 2.8 (V2) = AKI Stage 2 in 48h",
+            "Atenolol continuation in septic shock: beta-blocker may worsen hypotension in distributive shock \u2014 hold or switch",
+            "Nitrofurantoin was prescribed in V1 when eGFR was borderline \u2014 should have been flagged",
+            "Sepsis bundle: antibiotics within 1h, blood cultures before, 30mL/kg fluid bolus, vasopressor if MAP <65",
+            "QTc 458ms: flag for any QT-prolonging drugs"
+          ],
+          "stateless_agent_error": "Without V1 memory: doesn't know nitrofurantoin was given, doesn't know allergy history, misses AKI trajectory"
+        }
+      },
+      {
+        "visit_id": "V3",
+        "date": "2025-01-22",
+        "visit_type": "Inpatient Day 12 \u2014 Psychiatry Review",
+        "chief_complaint": "Persistent low mood, poor sleep, anhedonia post-ICU",
+        "symptoms": [
+          "low mood for 3+ weeks",
+          "anhedonia \u2014 no pleasure in activities",
+          "sleep disruption \u2014 early morning waking",
+          "poor concentration",
+          "appetite loss (4 kg weight loss over 2 weeks)",
+          "PHQ-9 score: 16 (moderate-severe depression)",
+          "passive suicidal ideation \u2014 'don't care if I die'",
+          "no active plan or intent"
+        ],
+        "vitals": {
+          "BP": "122/76 mmHg",
+          "HR": "76 bpm",
+          "RR": "16 breaths/min",
+          "SpO2": "97% on room air",
+          "Weight": "63 kg",
+          "QTc": "462 ms (recovering \u2014 was 458 during sepsis)"
+        },
+        "labs": {
+          "Creatinine": "1.4 mg/dL",
+          "eGFR": "42 mL/min",
+          "TFTs": "Normal (TSH 2.1)",
+          "Folate/B12": "Normal",
+          "Glucose": "8.4 mmol/L"
+        },
+        "doctor_note": "Post-ICU depression very common. PHQ-9=16, passive SI \u2014 needs antidepressant. Considering amitriptyline as junior doctor is familiar with it.",
+        "injected_pattern": {
+          "tag": "CRITIQUE + HITL",
+          "description": "THE KEY TRAP: Junior doctor proposes AMITRIPTYLINE (TCA). CRITIQUE NODE must catch: QTc 462ms + history of QTc 458ms during sepsis = HIGH RISK for TCA-induced QT prolongation \u2192 Torsades de Pointes. GL009 explicitly warns against TCAs in cardiac risk. HITL mandatory: PHQ-9=16 (high range), passive suicidal ideation \u2014 this MUST go to physician/psychiatrist. SSRI (sertraline or escitalopram) is the safe alternative.",
+          "critique_should_catch": [
+            "CRITICAL: Amitriptyline (TCA) is CONTRAINDICATED with QTc 462ms \u2014 risk of fatal arrhythmia",
+            "PHQ-9=16 + passive SI: HITL mandatory \u2014 psychiatrist review required before any antidepressant",
+            "Safe alternative: sertraline 50mg OD (SSRI, minimal QT effect)",
+            "Post-ICU psychology: consider ICU-specific psychological support",
+            "2-week safety check mandatory per NICE GL009 for all new antidepressants"
+          ],
+          "stateless_agent_error": "Without memory of QTc 458 from V2 (ICU): doesn't know cardiac risk. Without sepsis context: underestimates severity of post-ICU syndrome."
+        }
+      }
+    ],
+    "ground_truth_differential": {
+      "V1": [
+        {
+          "diagnosis": "Uncomplicated UTI",
+          "probability": 0.72
+        },
+        {
+          "diagnosis": "Early urosepsis (monitor)",
+          "probability": 0.18
+        },
+        {
+          "diagnosis": "Pyelonephritis",
+          "probability": 0.1
+        }
+      ],
+      "V2": [
+        {
+          "diagnosis": "Urosepsis / septic shock",
+          "probability": 0.94
+        },
+        {
+          "diagnosis": "AKI stage 2 (sepsis-associated)",
+          "probability": 0.91
+        },
+        {
+          "diagnosis": "Bilateral pyelonephritis",
+          "probability": 0.88
+        }
+      ],
+      "V3": [
+        {
+          "diagnosis": "Post-ICU depression (moderate-severe)",
+          "probability": 0.87
+        },
+        {
+          "diagnosis": "Post-ICU syndrome (PICS)",
+          "probability": 0.79
+        },
+        {
+          "diagnosis": "Suicidal ideation (passive, low risk)",
+          "probability": 0.87
+        }
+      ]
+    },
+    "critique_injections": [
+      {
+        "visit": "V1",
+        "type": "ALLERGY",
+        "severity": "CRITICAL",
+        "message": "DRUG ALLERGY ALERT: TMP-SMX (trimethoprim-sulfamethoxazole) contains a sulfonamide. Patient has documented SULFONAMIDE ALLERGY. Do NOT prescribe. Safe alternatives: nitrofurantoin (if eGFR >45), fosfomycin, pivmecillinam."
+      },
+      {
+        "visit": "V2",
+        "type": "CONTRAINDICATION",
+        "severity": "CRITICAL",
+        "message": "Atenolol (beta-blocker) continued in septic shock (distributive shock, MAP 65). Beta-blockers may worsen vasodilation and hypotension. Recommend: hold atenolol, reassess when hemodynamically stable."
+      },
+      {
+        "visit": "V3",
+        "type": "CONTRAINDICATION",
+        "severity": "CRITICAL",
+        "message": "AMITRIPTYLINE (TCA) proposed. QTc is 462ms (was 458ms at V2). TCAs prolong QT interval \u2014 risk of Torsades de Pointes. Per NICE GL009: avoid TCAs in arrhythmia/cardiac disease. SAFE ALTERNATIVE: sertraline 50mg OD. HITL MANDATORY: passive SI documented."
+      }
+    ]
+  }
+]
